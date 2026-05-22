@@ -1,0 +1,84 @@
+@import "tailwindcss";
+@source "../../src/**/*.{js,ts,jsx,tsx,mdx}";
+
+@theme {
+  --font-sans: var(--font-dm-sans), sans-serif;
+  --font-display: var(--font-sora), sans-serif;
+  
+  --color-brand-black: #000000;
+  --color-neon-yellow: #E4FF00;
+  --color-neon-green: #00FF88;
+  --color-neon-pink: #FF0088;
+  --color-neon-cyan: #00E4FF;
+  
+  --color-primary-navy: #000000;
+  --color-accent-gold: #E4FF00;
+  --color-dark-accent: #000000;
+  --color-text-primary: #000000;
+  --color-text-muted: #555555;
+}
+
+/* Swiss Minimalist & Neobrutalist Base Styles */
+body {
+  background-color: #FFFFFF;
+  color: #000000;
+  font-family: var(--font-dm-sans), sans-serif;
+  overflow-x: hidden;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: var(--font-sora), sans-serif;
+  color: #000000;
+  font-weight: 700;
+}
+
+/* Sharp Stark Scrollbars */
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+::-webkit-scrollbar-track {
+  background: #FFFFFF;
+  border-left: 1px solid #000000;
+}
+::-webkit-scrollbar-thumb {
+  background: #000000;
+  border: 1px solid #FFFFFF;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #E4FF00;
+}
+
+/* Swiss Standard Stark Card (Standard Pages) */
+.swiss-card {
+  background-color: #FFFFFF;
+  border: 1px solid #000000;
+  border-radius: 0px !important;
+}
+
+/* Neobrutalist Components (Accent Pages) */
+.border-brutal {
+  border: 2px solid #000000 !important;
+  border-radius: 0px !important;
+}
+
+.shadow-brutal {
+  box-shadow: 4px 4px 0px 0px #000000 !important;
+}
+
+.shadow-brutal-hover {
+  transition: all 0.1s ease;
+}
+.shadow-brutal-hover:hover {
+  transform: translate(-2px, -2px);
+  box-shadow: 6px 6px 0px 0px #000000 !important;
+}
+.shadow-brutal-hover:active {
+  transform: translate(2px, 2px);
+  box-shadow: 2px 2px 0px 0px #000000 !important;
+}
+
+/* Keep Code Sandbox Monaco container clean */
+.editor-border {
+  border: 1px solid #000000;
+}

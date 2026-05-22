@@ -11,7 +11,28 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 SECRET_KEY = os.environ.get('DJANGO_SECRET_KEY', 'django-insecure-hj^v3)fr=5p+7ibf7-7uj&5$r0eoja3b-w_cqoffbk+*!#3ros')
 DEBUG = os.environ.get('DJANGO_DEBUG', 'True').lower() == 'true'
 
-ALLOWED_HOSTS = os.environ.get('DJANGO_ALLOWED_HOSTS', '*').split(',')
+# Robust ALLOWED_HOSTS parsing to prevent 400 Bad Request errors due to scheme prefix or missing subdomains
+raw_hosts = os.environ.get('DJANGO_ALLOWED_HOSTS', '*')
+ALLOWED_HOSTS = []
+for host in raw_hosts.split(','):
+    host = host.strip()
+    if host.startswith('https://'):
+        host = host[8:]
+    elif host.startswith('http://'):
+        host = host[7:]
+    if '/' in host:
+        host = host.split('/')[0]
+    if ':' in host:
+        host = host.split(':')[0]
+    if host:
+        ALLOWED_HOSTS.append(host)
+
+# Add local loopback and Render wildcard defaults
+if '*' not in ALLOWED_HOSTS:
+    ALLOWED_HOSTS.append('localhost')
+    ALLOWED_HOSTS.append('127.0.0.1')
+    ALLOWED_HOSTS.append('.onrender.com')
+
 
 
 # Application definition

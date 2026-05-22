@@ -18,6 +18,20 @@ Featuring a striking, custom **Swiss Neobrutalist design system**—with sharp c
 
 ---
 
+## 📸 Interface Showcases
+
+### 🏠 Swiss Neobrutalist Landing Page
+![SkillMeter.ai Landing Page](docs/images/homepage.png)
+
+### 📊 Learner Dashboard
+![Learner Dashboard](docs/images/dashboard.png)
+
+### 🎓 Dynamic Credentials Hub
+![Credentials Hub](docs/images/certificates.png)
+
+---
+
+
 ## 🚀 Key Features
 
 | Feature | Description | Design Highlight |

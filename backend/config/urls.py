@@ -1,9 +1,30 @@
 from django.contrib import admin
 from django.urls import path, include
+from django.http import JsonResponse
 from apps.progress.views import DashboardView
 from apps.courses.views import LessonDetailView, LessonCompleteView
 
+def api_root(request):
+    return JsonResponse({
+        "status": "healthy",
+        "service": "SkillMeter.ai Backend API",
+        "version": "1.0.0",
+        "endpoints": {
+            "admin": "/admin/",
+            "auth": "/api/auth/",
+            "roadmaps": "/api/roadmaps/",
+            "courses": "/api/courses/",
+            "assessments": "/api/assessments/",
+            "progress": "/api/progress/",
+            "dashboard": "/api/dashboard/",
+            "mentors": "/api/mentors/",
+            "interviews": "/api/interviews/",
+            "certificates": "/api/certificates/"
+        }
+    })
+
 urlpatterns = [
+    path('', api_root, name='api_root'),
     path('admin/', admin.site.urls),
     
     # Custom API endpoints
@@ -21,3 +42,4 @@ urlpatterns = [
     path('api/interviews/', include('apps.interviews.urls')),
     path('api/certificates/', include('apps.certificates.urls')),
 ]
+

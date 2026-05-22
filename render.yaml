@@ -21,7 +21,8 @@ services:
       - key: DJANGO_CORS_ALLOW_ALL
         value: "True"
       - key: GEMINI_API_KEY
-        sync: true
+        sync: false
+
 
 databases:
   - name: skillmeter-db

@@ -1,0 +1,28 @@
+# Render Blueprint Specification for SkillMeter.ai
+# Use this file to deploy the entire backend stack (Python Web Service + PostgreSQL database) automatically.
+
+services:
+  - type: web
+    name: skillmeter-backend
+    runtime: python
+    buildCommand: bash build.sh
+    startCommand: gunicorn config.wsgi:application
+    rootDir: backend
+    plan: free
+    envVars:
+      - key: DATABASE_URL
+        fromDatabase:
+          name: skillmeter-db
+          property: connectionString
+      - key: DJANGO_DEBUG
+        value: "False"
+      - key: DJANGO_SECRET_KEY
+        generateValue: true
+      - key: DJANGO_CORS_ALLOW_ALL
+        value: "True"
+      - key: GEMINI_API_KEY
+        sync: true
+
+databases:
+  - name: skillmeter-db
+    plan: free

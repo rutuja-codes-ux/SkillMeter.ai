@@ -114,7 +114,7 @@ export default function SignupPage() {
             {error && (
               <div className="mb-6 bg-red-50 border-2 border-black p-4 rounded-none flex items-start gap-3 shadow-[2px_2px_0px_0px_rgba(0,0,0,0.15)]">
                 <AlertCircle className="w-5 h-5 text-red-600 shrink-0 mt-0.5" />
-                <span className="text-xs text-red-600 font-black uppercase tracking-wider leading-relaxed">{error}</span>
+                <span className="text-xs text-red-600 font-black tracking-wider leading-relaxed">{error}</span>
               </div>
             )}
 
@@ -127,7 +127,7 @@ export default function SignupPage() {
                     name="first_name"
                     value={formData.first_name}
                     onChange={handleChange}
-                    className="w-full px-4 py-2.5 rounded-none border-2 border-black focus:outline-none focus:bg-neutral-50 text-xs font-bold uppercase tracking-wider"
+                    className="w-full px-4 py-2.5 rounded-none border-2 border-black focus:outline-none focus:bg-neutral-50 text-xs font-bold tracking-wider"
                     placeholder="John"
                   />
                 </div>
@@ -138,7 +138,7 @@ export default function SignupPage() {
                     name="last_name"
                     value={formData.last_name}
                     onChange={handleChange}
-                    className="w-full px-4 py-2.5 rounded-none border-2 border-black focus:outline-none focus:bg-neutral-50 text-xs font-bold uppercase tracking-wider"
+                    className="w-full px-4 py-2.5 rounded-none border-2 border-black focus:outline-none focus:bg-neutral-50 text-xs font-bold tracking-wider"
                     placeholder="Doe"
                   />
                 </div>
@@ -156,7 +156,7 @@ export default function SignupPage() {
                     required
                     value={formData.username}
                     onChange={handleChange}
-                    className="w-full pl-10 pr-4 py-2.5 rounded-none border-2 border-black focus:outline-none focus:bg-neutral-50 text-xs font-bold uppercase tracking-wider"
+                    className="w-full pl-10 pr-4 py-2.5 rounded-none border-2 border-black focus:outline-none focus:bg-neutral-50 text-xs font-bold tracking-wider"
                     placeholder="johndoe"
                   />
                 </div>
@@ -174,7 +174,7 @@ export default function SignupPage() {
                     required
                     value={formData.email}
                     onChange={handleChange}
-                    className="w-full pl-10 pr-4 py-2.5 rounded-none border-2 border-black focus:outline-none focus:bg-neutral-50 text-xs font-bold uppercase tracking-wider"
+                    className="w-full pl-10 pr-4 py-2.5 rounded-none border-2 border-black focus:outline-none focus:bg-neutral-50 text-xs font-bold tracking-wider"
                     placeholder="john@example.com"
                   />
                 </div>
@@ -192,7 +192,7 @@ export default function SignupPage() {
                     required
                     value={formData.password}
                     onChange={handleChange}
-                    className="w-full pl-10 pr-4 py-2.5 rounded-none border-2 border-black focus:outline-none focus:bg-neutral-50 text-xs font-bold uppercase tracking-wider"
+                    className="w-full pl-10 pr-4 py-2.5 rounded-none border-2 border-black focus:outline-none focus:bg-neutral-50 text-xs font-bold tracking-wider"
                     placeholder="••••••••"
                   />
                 </div>

@@ -29,6 +29,9 @@ Featuring a striking, custom **Swiss Neobrutalist design system**—with sharp c
 ### 🎓 Dynamic Credentials Hub
 ![Credentials Hub](docs/images/certificates.png)
 
+### 🎬 Interactive Lesson Player
+![Lesson Player](docs/images/learning.png)
+
 ---
 
 

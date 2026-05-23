@@ -21,16 +21,16 @@ Featuring a striking, custom **Swiss Neobrutalist design system**—with sharp c
 ## 📸 Interface Showcases
 
 ### 🏠 Swiss Neobrutalist Landing Page
-![SkillForge.ai Landing Page](docs/images/homepage.png)
+![SkillForge.ai Landing Page](docs/images/homepage-v2.png)
 
 ### 📊 Learner Dashboard
-![Learner Dashboard](docs/images/dashboard.png)
+![Learner Dashboard](docs/images/dashboard-v2.png)
 
 ### 🎓 Dynamic Credentials Hub
-![Credentials Hub](docs/images/certificates.png)
+![Credentials Hub](docs/images/certificates-v2.png)
 
 ### 🎬 Interactive Lesson Player
-![Lesson Player](docs/images/learning.png)
+![Lesson Player](docs/images/learning-v2.png)
 
 ---
 

@@ -47,11 +47,10 @@ class RegisterSerializer(serializers.ModelSerializer):
             last_name=validated_data.get('last_name', '')
         )
         
-        UserProfile.objects.create(
-            user=user,
-            learning_goal=learning_goal,
-            skill_level=skill_level,
-            available_hours_per_week=available_hours_per_week
-        )
+        profile, _ = UserProfile.objects.get_or_create(user=user)
+        profile.learning_goal = learning_goal
+        profile.skill_level = skill_level
+        profile.available_hours_per_week = available_hours_per_week
+        profile.save()
         
         return user

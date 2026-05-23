@@ -3,6 +3,7 @@
 import React, { useState, useEffect } from "react";
 import Link from "next/link";
 import { usePathname, useRouter } from "next/navigation";
+import { api } from "@/lib/api";
 import {
   LayoutDashboard,
   Map,
@@ -49,16 +50,30 @@ export default function DashboardLayout({ children }: { children: React.ReactNod
       return;
     }
 
-    // Try reading profile from localStorage
-    const cachedProfile = localStorage.getItem("user_profile");
-    if (cachedProfile) {
+    async function fetchUserProfile() {
       try {
-        setUserProfile(JSON.parse(cachedProfile));
+        const profile = await api.getProfile();
+        if (profile) {
+          setUserProfile(profile);
+          localStorage.setItem("user_profile", JSON.stringify(profile));
+        }
       } catch (e) {
-        console.error("Error parsing user profile", e);
+        console.error("Error fetching user profile", e);
+        // Fallback to cached profile if offline/error
+        const cachedProfile = localStorage.getItem("user_profile");
+        if (cachedProfile) {
+          try {
+            setUserProfile(JSON.parse(cachedProfile));
+          } catch (parseErr) {
+            console.error("Error parsing user profile", parseErr);
+          }
+        }
+      } finally {
+        setLoading(false);
       }
     }
-    setLoading(false);
+
+    fetchUserProfile();
   }, [router]);
 
   const handleLogout = () => {

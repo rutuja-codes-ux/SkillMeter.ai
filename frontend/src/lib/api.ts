@@ -17,10 +17,13 @@ async function apiRequest(endpoint: string, options: RequestOptions = {}) {
     headers.set("Content-Type", "application/json");
   }
 
-  // Inject token
+  // Inject token (unless it's an auth endpoint like login or register)
   let token = options.token;
   if (token === undefined && typeof window !== "undefined") {
-    token = localStorage.getItem("access_token");
+    const isAuthEndpoint = endpoint.includes("/api/auth/login/") || endpoint.includes("/api/auth/register/");
+    if (!isAuthEndpoint) {
+      token = localStorage.getItem("access_token");
+    }
   }
   if (token) {
     headers.set("Authorization", `Bearer ${token}`);
@@ -39,7 +42,9 @@ async function apiRequest(endpoint: string, options: RequestOptions = {}) {
     } catch {
       errorDetail = response.statusText;
     }
-    throw new Error(errorDetail);
+    const err = new Error(errorDetail) as any;
+    err.status = response.status;
+    throw err;
   }
 
   if (response.status === 204) return null;
@@ -48,8 +53,8 @@ async function apiRequest(endpoint: string, options: RequestOptions = {}) {
 
 export const api = {
   // Authentication
-  login: (credentials: any) => apiRequest("/api/auth/login/", { method: "POST", body: JSON.stringify(credentials) }),
-  register: (userData: any) => apiRequest("/api/auth/register/", { method: "POST", body: JSON.stringify(userData) }),
+  login: (credentials: any) => apiRequest("/api/auth/login/", { method: "POST", body: JSON.stringify(credentials), token: null }),
+  register: (userData: any) => apiRequest("/api/auth/register/", { method: "POST", body: JSON.stringify(userData), token: null }),
   getProfile: () => apiRequest("/api/auth/me/"),
 
   // Dashboard

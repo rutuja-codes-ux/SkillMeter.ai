@@ -57,8 +57,16 @@ export default function DashboardLayout({ children }: { children: React.ReactNod
           setUserProfile(profile);
           localStorage.setItem("user_profile", JSON.stringify(profile));
         }
-      } catch (e) {
+      } catch (e: any) {
         console.error("Error fetching user profile", e);
+        if (e.status === 401) {
+          // Token expired or invalid, redirect to login
+          localStorage.removeItem("access_token");
+          localStorage.removeItem("refresh_token");
+          localStorage.removeItem("user_profile");
+          router.push("/login");
+          return;
+        }
         // Fallback to cached profile if offline/error
         const cachedProfile = localStorage.getItem("user_profile");
         if (cachedProfile) {

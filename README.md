@@ -1,4 +1,4 @@
-# ⚡ SkillMeter.ai — Dynamic AI Learning Roadmaps & Secure Credentials
+# ⚡ SkillForge.ai — Dynamic AI Learning Roadmaps & Secure Credentials
 
 <p align="center">
   <img src="https://img.shields.io/badge/Next.js%2015-000000?style=for-the-badge&logo=nextdotjs&logoColor=white" alt="Next.js 15" />
@@ -12,16 +12,16 @@
 ---
 
 ## 🎨 Overview
-**SkillMeter.ai** is a premium, high-fidelity AI-powered learning platform designed for structured roadmap generation, dynamic progress tracking, and **security-hardened course certifications**. 
+**SkillForge.ai** is a premium, high-fidelity AI-powered learning platform designed for structured roadmap generation, dynamic progress tracking, and **security-hardened course certifications**. 
 
-Featuring a striking, custom **Swiss Neobrutalist design system**—with sharp contrast lines, thick offsets, interactive micro-animations, and vibrant color-blocks—SkillMeter.ai marries next-generation artificial intelligence with strict enterprise-grade credentialing.
+Featuring a striking, custom **Swiss Neobrutalist design system**—with sharp contrast lines, thick offsets, interactive micro-animations, and vibrant color-blocks—SkillForge.ai marries next-generation artificial intelligence with strict enterprise-grade credentialing.
 
 ---
 
 ## 📸 Interface Showcases
 
 ### 🏠 Swiss Neobrutalist Landing Page
-![SkillMeter.ai Landing Page](docs/images/homepage.png)
+![SkillForge.ai Landing Page](docs/images/homepage.png)
 
 ### 📊 Learner Dashboard
 ![Learner Dashboard](docs/images/dashboard.png)
@@ -92,7 +92,7 @@ graph TD
 
 ## 🔒 Security Infrastructure: Certificate Completion Locks
 
-SkillMeter.ai implements a strict **Zero-Trust Certificate Download & Verification Policy** inside the Django security layer:
+SkillForge.ai implements a strict **Zero-Trust Certificate Download & Verification Policy** inside the Django security layer:
 
 * **Completion-Validated Generation**: The backend lists active courses and dynamically computes user progress. Certificates are only generated once progress matches exactly `100.0%`.
 * **Download Hardening**: Direct requests to download raw credential PDFs are blocked at the controller level:
@@ -162,7 +162,7 @@ npm run dev
 
 ## 🎨 The Swiss Neobrutalist Design System
 
-SkillMeter.ai is designed from the ground up to break away from traditional "clean-and-boring" dashboards. It implements a premium **Swiss Neobrutalist** theme:
+SkillForge.ai is designed from the ground up to break away from traditional "clean-and-boring" dashboards. It implements a premium **Swiss Neobrutalist** theme:
 * **High Contrast Borders**: Hard-edged `4px` and `2px` black solid borders (`border-black`) on all interactive cards, inputs, and buttons.
 * **Dynamic Offsets**: Bold drop-shadows that slide in on hover, mimicking high-impact retro graphic prints:
   ```css

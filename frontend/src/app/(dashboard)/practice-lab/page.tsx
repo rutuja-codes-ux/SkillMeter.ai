@@ -23,7 +23,7 @@ const templates: Record<string, LanguageTemplate> = {
 
 # Test Case Execution
 print("Test Case 1: 'hello' ->", reverse_string("hello"))
-print("Test Case 2: 'SkillMeter' ->", reverse_string("SkillMeter"))
+print("Test Case 2: 'SkillForge' ->", reverse_string("SkillForge"))
 `,
   },
   javascript: {
@@ -37,7 +37,7 @@ print("Test Case 2: 'SkillMeter' ->", reverse_string("SkillMeter"))
 
 // Test Case Execution
 console.log("Test Case 1: 'hello' ->", reverseString("hello"));
-console.log("Test Case 2: 'SkillMeter' ->", reverseString("SkillMeter"));
+console.log("Test Case 2: 'SkillForge' ->", reverseString("SkillForge"));
 `,
   },
   cpp: {
@@ -56,7 +56,7 @@ std::string reverseString(std::string str) {
 
 int main() {
     std::cout << "Test Case 1: 'hello' -> " << reverseString("hello") << std::endl;
-    std::cout << "Test Case 2: 'SkillMeter' -> " << reverseString("SkillMeter") << std::endl;
+    std::cout << "Test Case 2: 'SkillForge' -> " << reverseString("SkillForge") << std::endl;
     return 0;
 }
 `,
@@ -74,7 +74,7 @@ export default function PracticeLabPage() {
   const [checks, setChecks] = useState([
     { id: 1, text: "Function compiles and runs with zero syntax errors", status: "pending" },
     { id: 2, text: "Successfully reverses basic string 'hello' to 'olleh'", status: "pending" },
-    { id: 3, text: "Successfully reverses alphanumeric string 'SkillMeter' to 'reteMlliKS'", status: "pending" },
+    { id: 3, text: "Successfully reverses alphanumeric string 'SkillForge' to 'egroFlliKS'", status: "pending" },
   ]);
 
   useEffect(() => {
@@ -121,7 +121,7 @@ export default function PracticeLabPage() {
           consoleLogs = [
             "[System] Sandboxed runtime started successfully.",
             "Test Case 1: 'hello' -> olleh",
-            "Test Case 2: 'SkillMeter' -> reteMlliKS",
+            "Test Case 2: 'SkillForge' -> egroFlliKS",
             "",
             "Execution completed successfully. Exit code: 0",
           ];
@@ -132,7 +132,7 @@ export default function PracticeLabPage() {
           consoleLogs = [
             "[System] Sandboxed runtime started successfully.",
             "Test Case 1: 'hello' -> hello",
-            "Test Case 2: 'SkillMeter' -> SkillMeter",
+            "Test Case 2: 'SkillForge' -> SkillForge",
             "",
             "Execution completed with Warning: TODO not implemented.",
           ];
@@ -152,7 +152,7 @@ export default function PracticeLabPage() {
       setChecks([
         { id: 1, text: "Function compiles and runs with zero syntax errors", status: itemStatus(check1) },
         { id: 2, text: "Successfully reverses basic string 'hello' to 'olleh'", status: itemStatus(check2) },
-        { id: 3, text: "Successfully reverses alphanumeric string 'SkillMeter' to 'reteMlliKS'", status: itemStatus(check3) },
+        { id: 3, text: "Successfully reverses alphanumeric string 'SkillForge' to 'egroFlliKS'", status: itemStatus(check3) },
       ]);
       setRunning(false);
     }, 1500);

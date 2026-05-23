@@ -1,9 +1,9 @@
-# Render Blueprint Specification for SkillMeter.ai
+# Render Blueprint Specification for SkillForge.ai
 # Use this file to deploy the entire backend stack (Python Web Service + PostgreSQL database) automatically.
 
 services:
   - type: web
-    name: skillmeter-backend
+    name: skillforge-backend
     runtime: python
     buildCommand: bash build.sh
     startCommand: gunicorn config.wsgi:application
@@ -12,7 +12,7 @@ services:
     envVars:
       - key: DATABASE_URL
         fromDatabase:
-          name: skillmeter-db
+          name: skillforge-db
           property: connectionString
       - key: DJANGO_DEBUG
         value: "False"
@@ -25,5 +25,5 @@ services:
 
 
 databases:
-  - name: skillmeter-db
+  - name: skillforge-db
     plan: free

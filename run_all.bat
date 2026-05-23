@@ -1,7 +1,7 @@
 @echo off
-title SkillMeter.Ai Dev Suite Control Panel
+title SkillForge.Ai Dev Suite Control Panel
 echo =======================================================================
-echo          SKILLMETER.AI - FULL STACK ECOSYSTEM DEVELOPMENT SUITE
+echo          SKILLFORGE.AI - FULL STACK ECOSYSTEM DEVELOPMENT SUITE
 echo                 "Transforming Content into Competence"
 echo =======================================================================
 echo.

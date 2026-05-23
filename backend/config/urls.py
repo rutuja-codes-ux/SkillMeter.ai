@@ -7,7 +7,7 @@ from apps.courses.views import LessonDetailView, LessonCompleteView
 def api_root(request):
     return JsonResponse({
         "status": "healthy",
-        "service": "SkillMeter.ai Backend API",
+        "service": "SkillForge.ai Backend API",
         "version": "1.0.0",
         "endpoints": {
             "admin": "/admin/",

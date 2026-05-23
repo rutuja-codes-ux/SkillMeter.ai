@@ -33,7 +33,7 @@ export default function MarketingPage() {
             <div className="w-4 h-4 bg-[#E4FF00] border border-black rounded-none" />
           </div>
           <span className="font-display font-black text-lg tracking-tight uppercase">
-            SkillMeter<span className="text-black bg-[#E4FF00] px-1 ml-1 border border-black">.Ai</span>
+            SkillForge<span className="text-black bg-[#E4FF00] px-1 ml-1 border border-black">.Ai</span>
           </span>
         </div>
         
@@ -70,7 +70,7 @@ export default function MarketingPage() {
             </h1>
             
             <p className="text-xs text-neutral-600 max-w-xl font-bold uppercase tracking-wider leading-relaxed">
-              India faces a <span className="underline decoration-2 decoration-black font-black">53% talent gap in AI</span>. SkillMeter.Ai discovers the best web content, builds a structured day-by-day roadmap, and verifies your skills so you get hired.
+              India faces a <span className="underline decoration-2 decoration-black font-black">53% talent gap in AI</span>. SkillForge.Ai discovers the best web content, builds a structured day-by-day roadmap, and verifies your skills so you get hired.
             </p>
             
             <div className="flex flex-col sm:flex-row gap-4 pt-4">
@@ -109,13 +109,13 @@ export default function MarketingPage() {
                 <div className="absolute -bottom-1 -right-1 bg-black text-white text-[9px] font-black tracking-widest px-2.5 py-1 border border-black rounded-none uppercase">BOT</div>
               </div>
               
-              <h3 className="font-display font-black text-base uppercase tracking-wider text-black mb-2">I am SkillMeter Bot</h3>
+              <h3 className="font-display font-black text-base uppercase tracking-wider text-black mb-2">I am SkillForge Bot</h3>
               <p className="text-xs text-neutral-600 font-semibold max-w-xs mb-6 uppercase tracking-wider leading-relaxed">
                 "Tell me your goal (e.g. 'Build a React App' or 'Learn Machine Learning') and I'll extract videos, generate quizzes, and monitor your study room!"
               </p>
               
               <Link href="/signup" className="block w-full bg-black text-white hover:bg-[#E4FF00] hover:text-black border-2 border-black py-3.5 rounded-none text-xs font-black uppercase tracking-widest transition-all">
-                Chat with SkillMeter Bot →
+                Chat with SkillForge Bot →
               </Link>
             </div>
           </div>
@@ -125,7 +125,7 @@ export default function MarketingPage() {
       {/* How It Works Section */}
       <section id="how-it-works" className="py-24 px-6 md:px-12 max-w-6xl mx-auto w-full">
         <div className="text-center space-y-4 mb-16">
-          <h2 className="text-3xl md:text-4xl font-display font-black text-black uppercase tracking-tight">How SkillMeter Works</h2>
+          <h2 className="text-3xl md:text-4xl font-display font-black text-black uppercase tracking-tight">How SkillForge Works</h2>
           <p className="text-xs text-neutral-500 max-w-xl mx-auto uppercase font-black tracking-wider">Our AI system handles the educational heavy lifting so you can focus entirely on learning.</p>
         </div>
 
@@ -186,7 +186,7 @@ export default function MarketingPage() {
             
             <h3 className="text-xl font-display font-black uppercase tracking-wider text-black">Our Solution: The 3 Pillars</h3>
             <p className="text-xs text-neutral-500 font-black uppercase tracking-widest leading-relaxed">
-              SkillMeter replaces traditional static paths with a responsive dynamic architecture:
+              SkillForge replaces traditional static paths with a responsive dynamic architecture:
             </p>
             
             <ul className="space-y-6 pt-2">
@@ -271,7 +271,7 @@ export default function MarketingPage() {
                 <div className="w-1.5 h-1.5 bg-white border border-black rounded-none absolute -top-0.5 -right-0.5" />
                 <div className="w-3 h-3 bg-[#E4FF00] border border-black rounded-none" />
               </div>
-              <span className="font-display font-black uppercase text-base text-black">SkillMeter.Ai</span>
+              <span className="font-display font-black uppercase text-base text-black">SkillForge.Ai</span>
             </div>
             <p className="text-[10px] text-neutral-500 font-bold uppercase tracking-wider max-w-xs mt-1">We turn the unqualified millions into the qualified few.</p>
           </div>
@@ -283,7 +283,7 @@ export default function MarketingPage() {
           </div>
 
           <div className="text-[10px] text-neutral-400 font-black uppercase tracking-widest">
-            &copy; 2026 SkillMeter.Ai.
+            &copy; 2026 SkillForge.Ai.
           </div>
         </div>
       </footer>

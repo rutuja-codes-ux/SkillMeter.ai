@@ -15,8 +15,8 @@ const dmSans = DM_Sans({
 });
 
 export const metadata: Metadata = {
-  title: "SkillMeter.Ai - Transforming Content into Competence",
-  description: "AI-powered personalized learning roadmaps, interactive practice labs, focus study rooms, and verified certificates. Bridge the 53% talent gap in AI.",
+  title: "SkillForge.Ai - Transforming Content into Competence",
+  description: "SkillForge.Ai is an AI-powered personalized learning ecosystem...",
 };
 
 export default function RootLayout({

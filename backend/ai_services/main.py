@@ -12,7 +12,7 @@ from ai_services.orchestrator import (
 )
 from ai_services.youtube_discovery import find_videos_for_topic
 
-app = FastAPI(title="SkillMeter.Ai AI Orchestrator Microservice", version="1.0.0")
+app = FastAPI(title="SkillForge.Ai AI Orchestrator Microservice", version="1.0.0")
 
 # Enable CORS for Next.js (port 3000) and Django (port 8000)
 app.add_middleware(
@@ -96,4 +96,4 @@ def api_evaluate_answer(req: EvaluateRequest):
 
 @app.get("/")
 def health_check():
-    return {"status": "ok", "service": "SkillMeter.Ai AI Orchestrator"}
+    return {"status": "ok", "service": "SkillForge.Ai AI Orchestrator"}

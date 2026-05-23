@@ -127,7 +127,7 @@ class CertificateDownloadView(views.APIView):
         # 6. Header Logo Title
         p.setFillColor(colors.HexColor("#1B2A4A"))
         p.setFont("Helvetica-Bold", 24)
-        p.drawCentredString(width / 2.0, height - 100, "SKILLMETER.AI")
+        p.drawCentredString(width / 2.0, height - 100, "SKILLFORGE.AI")
 
         # 7. Sub-title
         p.setFont("Helvetica", 14)
@@ -169,7 +169,7 @@ class CertificateDownloadView(views.APIView):
         p.line(100, 110, 280, 110)
         p.setFillColor(colors.HexColor("#1B2A4A"))
         p.setFont("Helvetica-Bold", 12)
-        p.drawString(100, 90, "SkillMeter Bot")
+        p.drawString(100, 90, "SkillForge Director")
         p.setFont("Helvetica", 10)
         p.setFillColor(colors.HexColor("#6B7A99"))
         p.drawString(100, 75, "AI Learning Orchestrator Director")
@@ -190,6 +190,11 @@ class CertificateDownloadView(views.APIView):
         p.setFillColor(colors.HexColor("#1B2A4A"))
         p.circle(width - 85, 75, 4, fill=True, stroke=False)
         p.circle(width - 73, 63, 2, fill=True, stroke=False)
+
+        # 12. Footer brand
+        p.setFillColor(colors.HexColor("#6B7A99"))
+        p.setFont("Helvetica-Bold", 8)
+        p.drawCentredString(width / 2.0, 45, "SkillForge.Ai Learning Platform")
 
         p.showPage()
         p.save()

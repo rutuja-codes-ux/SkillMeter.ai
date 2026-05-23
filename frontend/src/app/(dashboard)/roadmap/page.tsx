@@ -170,7 +170,7 @@ export default function RoadmapPage() {
               <Sparkles className="w-5 h-5 text-white" /> AI Goal Wizard
             </h3>
             <p className="text-xs text-neutral-400 mt-1">
-              Specify your target and let SkillMeter search the web and schedule your path.
+              Specify your target and let SkillForge search the web and schedule your path.
             </p>
           </div>
 

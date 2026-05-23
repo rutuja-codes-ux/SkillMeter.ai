@@ -332,7 +332,7 @@ export default function CertificatesPage() {
             </h3>
 
             <p className="text-[11px] text-neutral-600 leading-relaxed">
-              Enter any SkillMeter.Ai credential code below to verify the learner identity and validation authenticity.
+              Enter any SkillForge.Ai credential code below to verify the learner identity and validation authenticity.
             </p>
 
             <form onSubmit={handleVerify} className="space-y-3">
@@ -431,7 +431,7 @@ export default function CertificatesPage() {
 
               {/* Branding Header */}
               <div className="space-y-1 pt-4">
-                <span className="font-display font-black text-black tracking-widest text-xl">SKILLMETER.AI</span>
+                <span className="font-display font-black text-black tracking-widest text-xl">SKILLFORGE.AI</span>
                 <span className="block text-[8px] font-black text-neutral-500 tracking-widest uppercase">Transforming Content Into Competence</span>
               </div>
 
@@ -460,7 +460,7 @@ export default function CertificatesPage() {
               <div className="grid grid-cols-2 gap-12 px-6 pt-4 pb-2 text-left border-t border-black">
                 <div className="space-y-1">
                   <div className="h-6 flex items-end">
-                    <span className="font-mono text-xs text-black font-black italic">SkillMeter Bot</span>
+                    <span className="font-mono text-xs text-black font-black italic">SkillForge Director</span>
                   </div>
                   <div className="border-t border-black pt-1">
                     <span className="text-[8px] text-neutral-500 uppercase tracking-widest font-black block">AI learning Director</span>

@@ -86,7 +86,7 @@ export default function DashboardLayout({ children }: { children: React.ReactNod
       {/* Mobile Top Navbar */}
       <div className="md:hidden w-full bg-white text-black py-3 px-4 flex justify-between items-center fixed top-0 left-0 z-40 border-b border-black">
         <div className="flex items-center gap-2">
-          <span className="font-display font-black text-base tracking-tighter">SkillMeter.Ai</span>
+          <span className="font-display font-black text-base tracking-tighter">SkillForge.Ai</span>
         </div>
         <button onClick={() => setSidebarOpen(true)} className="text-black p-1 border border-black rounded-none bg-white">
           <Menu className="w-5 h-5" />
@@ -104,7 +104,7 @@ export default function DashboardLayout({ children }: { children: React.ReactNod
           <div className="p-4 flex items-center justify-between border-b border-black relative overflow-hidden">
             <div className="flex flex-col gap-1">
               <span className="font-display font-black text-sm tracking-tighter block leading-none">
-                SkillMeter<span className="font-normal text-xs text-neutral-500">.Ai</span>
+                SkillForge<span className="font-normal text-xs text-neutral-500">.Ai</span>
               </span>
               <span className="text-[8px] text-neutral-600 font-bold uppercase tracking-wider block">Content → Competence</span>
             </div>

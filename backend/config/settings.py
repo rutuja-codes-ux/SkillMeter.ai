@@ -60,6 +60,8 @@ INSTALLED_APPS = [
     'apps.certificates',
 ]
 
+PROJECT_NAME = "SkillForge"
+
 MIDDLEWARE = [
     'corsheaders.middleware.CorsMiddleware', # Put CORS first
     'django.middleware.security.SecurityMiddleware',

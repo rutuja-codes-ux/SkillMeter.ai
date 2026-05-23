@@ -65,7 +65,7 @@ export default function SignupPage() {
             <div className="w-4 h-4 bg-[#E4FF00] border border-black rounded-none" />
           </div>
           <span className="font-display font-black text-lg tracking-tight uppercase text-black">
-            SkillMeter<span className="text-black bg-[#E4FF00] px-1 ml-1 border border-black">.Ai</span>
+            SkillForge<span className="text-black bg-[#E4FF00] px-1 ml-1 border border-black">.Ai</span>
           </span>
         </Link>
         <Link href="/login" className="text-black hover:underline text-xs font-black uppercase tracking-widest transition-colors">
@@ -95,7 +95,7 @@ export default function SignupPage() {
               </div>
               <h3 className="text-sm font-black uppercase tracking-widest text-black">Bridge the 53% Gap</h3>
               <p className="text-xs text-neutral-600 font-semibold uppercase tracking-wider leading-relaxed">
-                "SkillMeter.Ai translates goals into day-by-day learning logs, video recommendations, mock code execution environments, and validated certificates. Join the competent few!"
+                "SkillForge.Ai translates goals into day-by-day learning logs, video recommendations, mock code execution environments, and validated certificates. Join the competent few!"
               </p>
             </div>
 
@@ -108,7 +108,7 @@ export default function SignupPage() {
           <div className="md:col-span-7 p-8 md:p-12 flex flex-col justify-center">
             <div className="space-y-2 mb-8">
               <h2 className="text-3xl font-display font-black uppercase tracking-tight text-black">Create Your Account</h2>
-              <p className="text-xs text-neutral-500 font-bold uppercase tracking-wider">Start personalizing your custom engineering path today.</p>
+              <p className="text-xs text-neutral-500 font-bold uppercase tracking-wider">Get started free on SkillForge.Ai</p>
             </div>
 
             {error && (
@@ -222,7 +222,7 @@ export default function SignupPage() {
       {/* Footer */}
       <footer className="bg-white text-black py-8 px-6 md:px-12 border-t-2 border-black">
         <div className="max-w-6xl mx-auto flex flex-col md:flex-row justify-between items-center gap-4 text-[10px] text-neutral-400 font-black uppercase tracking-widest">
-          <div>&copy; 2026 SkillMeter.Ai.</div>
+          <div>&copy; 2026 SkillForge.Ai.</div>
           <div className="flex gap-6 text-xs text-black">
             <Link href="/" className="hover:underline">Home</Link>
             <Link href="/login" className="hover:underline">Login</Link>
